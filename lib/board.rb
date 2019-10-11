@@ -33,4 +33,8 @@ class Board
   def taken?(position)
     @cells[position.to_i - 1] == "X" || @cells[position.to_i - 1] == "O"
   end
+
+  def valid_move?(position)
+    position.between?(0, 8) && !taken?(position)
+  end
 end
