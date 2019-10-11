@@ -1,2 +1,2 @@
-class game
+class Game
 end
