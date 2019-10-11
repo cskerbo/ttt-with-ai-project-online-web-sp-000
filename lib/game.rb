@@ -46,7 +46,7 @@ class Game
   end
 
   def turn
-    Players::Human.new
+    Players::Human.new(token)
 
   end
 end
