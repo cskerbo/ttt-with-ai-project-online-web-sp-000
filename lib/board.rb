@@ -37,4 +37,8 @@ class Board
   def valid_move?(position)
     position.to_i.between?(1, 9) && !taken?(position)
   end
+
+  def update(user_input, player = "X")
+    @cells[user_input] = player
+  end
 end
