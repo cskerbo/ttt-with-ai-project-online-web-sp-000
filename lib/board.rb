@@ -38,7 +38,7 @@ class Board
     position.to_i.between?(1, 9) && !taken?(position)
   end
 
-  def update(user_input, player = "X")
+  def update(user_input, player)
     @cells[user_input.to_i - 1] = player.token
   end
 end
