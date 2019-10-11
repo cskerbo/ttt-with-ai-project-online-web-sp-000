@@ -22,4 +22,7 @@ class Board
     @cells[user_input.to_i - 1]
   end
 
+  def full?
+    @cells.all? {|filled| filled == "X" || filled == "O"}
+  end
 end
