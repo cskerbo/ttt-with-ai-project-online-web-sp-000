@@ -11,6 +11,6 @@ class Board
   end
 
   def display
-
+  end
 
 end
