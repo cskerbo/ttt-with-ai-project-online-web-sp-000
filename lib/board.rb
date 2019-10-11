@@ -6,4 +6,8 @@ class Board
     @cells = Array.new(9, " ")
   end
 
+  def initialize
+    self.reset!
+  end
+
 end
