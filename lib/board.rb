@@ -31,6 +31,6 @@ class Board
   end
 
   def taken?(position)
-    @cells[position.to_i] == "X" || @cells[position.to_i] == "O"
+    @cells[position.to_i - 1] == "X" || @cells[position.to_i - 1] == "O"
   end
 end
