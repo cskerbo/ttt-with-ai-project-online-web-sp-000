@@ -29,4 +29,8 @@ class Board
   def turn_count
     @cells.count {|turn| turn == "X" || turn == "O"}
   end
+
+  def taken?(position)
+    @cells[position] == "X" || @cells[position] == "O"
+  end
 end
