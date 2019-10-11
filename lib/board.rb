@@ -39,6 +39,6 @@ class Board
   end
 
   def update(user_input, player = "X")
-    @cells[user_input.to_i] = player
+    @cells[user_input.to_i - 1] = player
   end
 end
