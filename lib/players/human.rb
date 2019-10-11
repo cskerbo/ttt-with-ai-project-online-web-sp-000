@@ -3,7 +3,7 @@ module Players
 
     def move
       puts "Please input a number between 1-9:"
-      user_input = gets.strip
+      gets.strip
     end
   end
 
