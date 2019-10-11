@@ -3,7 +3,7 @@ class Board
   attr_accessor :cells
 
   def reset!
-    @cells = []
+    @cells.clear
   end
 
 end
