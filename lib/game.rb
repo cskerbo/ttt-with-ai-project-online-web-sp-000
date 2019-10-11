@@ -25,8 +25,8 @@ class Game
 
   def won?
     WIN_COMBINATIONS.detect do |combo|
-      @board[combo[0]] == @board[combo[1]] &&
-      @board[combo[1]] == @board[combo[2]] &&
+      @board.cells[combo[0]] == @board.cells[combo[1]] &&
+      @board.cells[combo[1]] == @board.cells[combo[2]] &&
       @board.taken?(combo[0])
     end
   end
